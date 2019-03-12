@@ -1,0 +1,30 @@
+<div *ngIf="item">
+  <h2>{{item.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{item.id}}</div>
+  <div>
+    <label>name:
+      <input [(ngModel)]="item.name" placeholder="name" />
+    </label>
+    <br />
+    <label>info:
+      <input [(ngModel)]="item.info" placeholder="info" />
+    </label>
+    <br />
+    <label>active:
+      <input [(ngModel)]="item.active" placeholder="active" />
+    </label>
+    <br />
+    <p>Imagine:</p>
+    <button mat-raised-button (click)="fileImageInput.click()">
+      <span>Select Image</span>
+      <input #fileImageInput type="file" style="display:none;" accept="image/jpeg, .jpeg, image/png, .png, image/pjpeg, .jpg"
+        (change)="onFileImageInput($event)" />
+    </button>
+    <br /><br /><br />
+    <div>
+      <img class="mb-image" mat-card-image [src]="item.image" *ngIf="item.image">
+    </div>
+  </div>
+  <button (click)="goBack()">go back</button>
+  <button (click)="save()">save</button>
+</div>

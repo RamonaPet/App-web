@@ -1,0 +1,21 @@
+<div class="mb-20" fxLayout="row" fxLayout.lt-md="column" fxFlex fxLayoutGap="20px">
+    <div fxFlex *ngFor="let tool of toolItems">
+        <mat-card>
+            <img class="mb-image" mat-card-image [src]="tool.image" *ngIf="tool.image">
+            <mat-card-header style="justify-content: center">
+                <mat-card-title>
+                    <h3 class="m-0">{{tool.name}}</h3>
+                </mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>
+                    {{tool.info}}
+                </p>
+            </mat-card-content>
+
+            <mat-card-actions>
+                <button mat-button routerLink="/tools/tool-detail/{{tool.id}}/1">Details</button>
+            </mat-card-actions>
+        </mat-card>
+    </div>
+</div>

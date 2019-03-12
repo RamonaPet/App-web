@@ -13,7 +13,7 @@ import { ProductService } from '../../../shared/services/product/product.service
 })
 export class ProductListComponent implements OnInit {
   public dataSource = null;
-  public displayedColumns = ['id', 'name', 'info', 'active', 'image'];
+  public displayedColumns = ['image', 'name'];
 
   constructor(
     private route: ActivatedRoute,
@@ -24,6 +24,20 @@ export class ProductListComponent implements OnInit {
   }
 
   fillItems(): void {
+    this.dataSource = new MatTableDataSource([{
+      id: 1,
+      name: 'string 1',
+      info: '',
+      active: true,
+      image: ''
+    }, {
+      id: 2,
+      name: 'string 2',
+      info: '',
+      active: true,
+      image: ''
+    }]);
+    
     this.serviceItems.getItems().subscribe(items => {
       this.dataSource = new MatTableDataSource(items);
     });

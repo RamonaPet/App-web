@@ -1,12 +1,16 @@
 <div class="mb-20" fxLayout="row" fxLayout.lt-md="column" fxLayoutGap="20px">
     <div fxFlex>
         <mat-card>
-            <mat-card-header>
-                <mat-card-title>Adaugare topic</mat-card-title>
-            </mat-card-header>
+            <div fxLayout="row" fxLayoutGap="20px">
+                <div>
+                    <h2>Adaugare topic: </h2>
+                </div>
+            </div>
             <input matInput placeholder="Tool name: " #toolName>
+            <br />
             <input matInput placeholder="Tool info: " #toolInfo>
-            <button mat-button class="inputbutton" (click)="addItem(toolName.value, toolInfo.value); toolName.value=''; toolInfo.value='';">Save</button>
+            <br />
+            <button mat-raised-button class="inputbutton" (click)="addItem(toolName.value, toolInfo.value); toolName.value=''; toolInfo.value='';">Save</button>
         </mat-card>
     </div>
 </div>

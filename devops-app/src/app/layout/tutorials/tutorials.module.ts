@@ -6,7 +6,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {
   MatAutocompleteModule, MatCheckboxModule, MatDatepickerModule, MatInputModule, MatNativeDateModule, MatRadioModule, MatSelectModule,
   MatSliderModule, MatSlideToggleModule, MatButtonModule, MatCardModule, MatIconModule, MatTableModule, MatFormFieldModule, MatGridListModule,
-  MatPaginatorModule, MatDividerModule, MatListModule, MatSnackBarModule
+  MatPaginatorModule, MatDividerModule, MatListModule, MatSnackBarModule, MatTreeModule
 } from '@angular/material';
 
 import { MatTabsModule } from '@angular/material/tabs';
@@ -25,7 +25,7 @@ import { TutorialListComponent } from './tutorial-list/tutorial-list.component';
     MatAutocompleteModule, MatCheckboxModule, MatDatepickerModule, MatInputModule, MatNativeDateModule, MatRadioModule, MatSelectModule,
     MatSliderModule, MatSlideToggleModule, MatButtonModule, MatCardModule, MatIconModule, MatTableModule, MatFormFieldModule, MatGridListModule,
     MatPaginatorModule, MatDividerModule, MatListModule, MatSnackBarModule, MatTabsModule, CKEditorModule,
-    FlexLayoutModule,
+    FlexLayoutModule, MatTreeModule,
     TutorialsRoutingModule
   ],
   declarations: [

@@ -46,7 +46,7 @@
                 <img class="mb-image"  [src]="newsItem.image ? newsItem.image : 'assets/images/no-image.svg'">
             </div>
             <div class="news-main-body">
-              <h2>{{newsItem.name}}</h2>
+              <h2 (click)="openDetails(newsItem)">{{newsItem.name}}</h2>
               <p>{{newsItem.info}}</p>
             </div>            
           </div>         

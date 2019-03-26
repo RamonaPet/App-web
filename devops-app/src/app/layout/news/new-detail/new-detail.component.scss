@@ -6,6 +6,13 @@
     }
 }
 
+.mat-card.details {
+  img {
+      margin-top: 0px;
+  }
+}
+
+
 .mb-20 {
     margin-bottom: 20px;
 }
@@ -31,3 +38,11 @@ table {
   max-width: 200px;
   max-height: 200px;
 }
+
+.news-main-body {
+  padding: 0 15px;
+}
+
+// .news-content {
+//   max-height: 500px;
+// }

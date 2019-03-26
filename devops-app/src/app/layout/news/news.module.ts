@@ -27,6 +27,9 @@ import { NewListComponent } from './new-list/new-list.component';
     FlexLayoutModule,
     NewsRoutingModule
   ],
+  entryComponents: [
+    NewDetailComponent
+  ],
   declarations: [
     NewListComponent,
     NewDetailComponent

@@ -1,7 +1,7 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Inject } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 
 import { News } from '../../../shared/services/news/news';
 import { NewsService } from '../../../shared/services/news/news.service';
@@ -26,6 +26,8 @@ export class NewDetailComponent implements OnInit {
   public viewType; 
 
   constructor(
+    public dialogRef: MatDialogRef<NewDetailComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: News,
     private route: ActivatedRoute,
     private location: Location,
     public snackBar: MatSnackBar,
@@ -33,10 +35,19 @@ export class NewDetailComponent implements OnInit {
   ) {
     this.viewType = +this.route.snapshot.paramMap.get('viewtype');
     console.log('test:' + VIEWS[this.viewType] );
+    console.log(data);     
    }
 
   ngOnInit() {
-    this.getItem();
+    // this.getItem();
+    if (this.data) {
+      this.item = this.data;
+      this.viewType = 1;
+    }  
+  }
+
+  onNoClick(): void {
+    this.dialogRef.close();
   }
 
   private getItem() {

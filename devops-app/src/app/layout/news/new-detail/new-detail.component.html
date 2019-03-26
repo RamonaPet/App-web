@@ -1,10 +1,11 @@
 <div fxLayout="row" fxLayoutGap="20px">
     <div>
-      <h2>News detail: </h2>
+      <h2 *ngIf="item && viewType==0">News detail: </h2>
+      <h2 *ngIf="item && viewType==1">{{ item.name }}</h2>
     </div>
   </div>
   
-  <div class="mb-20" fxLayout="row wrap" flFlex flexLayout="row" flexLayout.lt-md="column" *ngIf="item">
+  <div class="mb-20 news-content" fxLayout="row wrap" flFlex flexLayout="row" flexLayout.lt-md="column" *ngIf="item">
     <div fxFlex>
       <mat-card fxFlex="100" *ngIf="item && viewType==0">
         <mat-card-header>
@@ -40,26 +41,23 @@
         </mat-card-footer>
       </mat-card>
   
-      <mat-card fxFlex="100" *ngIf="item && viewType==1">
-        <mat-card-header>
+      <mat-card class="details" fxFlex="100" *ngIf="item && viewType==1">
+        <!-- <mat-card-header>
           <mat-card-title>
-            Tool Detail:
+            News Detail:
           </mat-card-title>
-        </mat-card-header>
+        </mat-card-header> -->
         <mat-card-content>
-          {{ item.name }}
-          <br /><br /><br />
-          {{ item.info }}
-          <br /><br /><br />
-          {{ item.active }}        
-          <br /><br /><br />
-          {{ item.description }}        
-          <br /><br /><br />
-          <div>
-            <img class="mb-image" mat-card-image [src]="item.image" *ngIf="item.image">
-          </div>
+            <div class="news-item" fxLayout="row" fxLayout.xs="column">
+                <div>
+                    <img class="mb-image"  [src]="item.image ? item.image : 'assets/images/no-image.svg'">
+                </div>
+                <div class="news-main-body">                  
+                  <p>{{item.description}}</p>
+                </div>            
+              </div>   
         </mat-card-content>
-        <mat-card-footer>
+        <mat-card-footer *ngIf="item && viewType==0"> 
           <button mat-raised-button (click)="goBack()">Inapoi</button>        
         </mat-card-footer>
       </mat-card>

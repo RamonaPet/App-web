@@ -4,6 +4,20 @@
         border-radius: 5px;
         margin-top: -25px;
     }
+
+    &.details {
+      img {        
+        margin: 0;
+      }
+    }    
+}
+
+.mat-card-footer {
+  margin: 0;
+
+  button {
+    background-color: #F8F8FF;
+  }
 }
 
 .mb-20 {

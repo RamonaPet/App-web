@@ -25,14 +25,14 @@ export class CategoryListComponent implements OnInit {
   fillItems(): void {
     this.dataSource = new MatTableDataSource([{
       id: 1,
-      name: 'string 1',
-      info: '',
+      name: 'Category 1',
+      info: 'Category 1 info',
       active: true,
       image: ''
     }, {
       id: 2,
-      name: 'string 2',
-      info: '',
+      name: 'Category 2',
+      info: 'Category 2 info',
       active: true,
       image: ''
     }]);

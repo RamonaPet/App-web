@@ -50,7 +50,7 @@ th.mat-header-cell {
     img {
         border-radius: 5px;
         margin-left: 10px;
-        // margin-top: -25px;
+        cursor: pointer;
     }
 
     .mat-row {
@@ -85,4 +85,8 @@ th.mat-header-cell {
 
 .news-main-body {
     padding: 0 15px;
+
+    h2 {
+        cursor: pointer;
+    }
 }

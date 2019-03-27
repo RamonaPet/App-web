@@ -40,23 +40,26 @@
       </mat-card-footer>
     </mat-card>
 
-    <mat-card fxFlex="100" *ngIf="item && viewType==1">
-      <mat-card-header>
-        <mat-card-title>
-          Tool Detail:
-        </mat-card-title>
-      </mat-card-header>
-      <mat-card-content>
+    <mat-card class="details" fxFlex="100" *ngIf="item && viewType==1">     
+      <mat-card-content>   
+        <h3>Name:</h3>     
         {{ item.name }}
-        <br /><br /><br />
-        {{ item.info }}
-        <br /><br /><br />
+        <br /><br />
+        <ng-container *ngIf="item.info">
+            <h3>Info:</h3>
+            {{ item.info }}
+            <br /><br />
+        </ng-container>      
+        <h3>Active:</h3>
         {{ item.active }}        
-        <br /><br /><br />
-        {{ item.description }}        
-        <br /><br /><br />
+        <br /><br />
+        <ng-container *ngIf="item.description">
+            <h3>Description:</h3>
+            {{ item.description }}
+            <br /><br />
+        </ng-container>
         <div>
-          <img class="mb-image" mat-card-image [src]="item.image" *ngIf="item.image">
+          <img class="mb-image"  mat-card-image [src]="item.image ? item.image : 'assets/images/no-image.svg'">
         </div>
       </mat-card-content>
       <mat-card-footer>

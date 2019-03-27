@@ -43,7 +43,7 @@
         <div class="container" fxLayout="column">
           <div fxFlex="99%" class="news-item" *ngFor="let newsItem of news" fxLayout="row" fxLayout.xs="column">
             <div>
-                <img class="mb-image"  [src]="newsItem.image ? newsItem.image : 'assets/images/no-image.svg'">
+                <img class="mb-image" (click)="openDetails(newsItem)" [src]="newsItem.image ? newsItem.image : 'assets/images/no-image.svg'">
             </div>
             <div class="news-main-body">
               <h2 (click)="openDetails(newsItem)">{{newsItem.name}}</h2>

@@ -4,6 +4,12 @@
         border-radius: 5px;
         margin-top: -25px;
     }
+
+    &.details {
+      img {        
+        margin: 0;
+      }
+    }  
 }
 
 .mb-20 {
@@ -21,6 +27,14 @@ table {
 
 .mb-20 {
   margin-bottom: 20px;
+}
+
+.mat-card-footer {
+  margin: 0;
+
+  button {
+    background-color: #F8F8FF;
+  }
 }
 
 .mat-column-select {

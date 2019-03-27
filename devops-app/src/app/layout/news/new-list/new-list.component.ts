@@ -35,7 +35,7 @@ export class NewListComponent implements OnInit {
     this.news = [
       {
         id: 1,
-        name: 'New breakthroughs in medicine',
+        name: 'CULedger and IBM Announce Collaboration to Deliver Blockchain Services for Financial Cooperatives and Credit Unions Worldwide',
         info: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis ultricies lacus sed turpis tincidunt id. Non diam phasellus vestibulum lorem. Arcu odio ut sem nulla pharetra diam sit amet nisl. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum. Facilisi morbi tempus iaculis urna id. Ut placerat orci nulla pellentesque dignissim enim sit amet. Euismod lacinia at quis risus sed vulputate odio ut. Justo laoreet sit amet cursus. Sagittis eu volutpat odio facilisis mauris. Justo nec ultrices dui sapien eget mi proin sed libero. Nunc sed id semper risus in. Enim praesent elementum facilisis leo vel fringilla est. In fermentum et sollicitudin ac. In nisl nisi scelerisque eu ultrices vitae. Ut consequat semper viverra nam libero. Duis at consectetur lorem donec. Tellus in hac habitasse platea dictumst vestibulum rhoncus est.
 
@@ -50,14 +50,14 @@ export class NewListComponent implements OnInit {
       },
       {
         id: 2,
-        name: 'How to save up on energy',
+        name: 'IBM X-Force Red Launches New Service for Blockchain Security Testing',
         info: 'Consectetur a erat nam at lectus urna. Morbi tincidunt augue interdum velit euismod in. Ornare massa eget egestas purus viverra. Malesuada fames ac turpis egestas sed tempus. Fames ac turpis egestas maecenas pharetra convallis posuere. Sit amet consectetur adipiscing elit pellentesque habitant morbi. Aenean pharetra magna ac placerat vestibulum lectus mauris. Dui ut ornare lectus sit amet est placerat in egestas. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper.',
         description: 'Consectetur a erat nam at lectus urna. Morbi tincidunt augue interdum velit euismod in. Ornare massa eget egestas purus viverra. Malesuada fames ac turpis egestas sed tempus. Fames ac turpis egestas maecenas pharetra convallis posuere. Sit amet consectetur adipiscing elit pellentesque habitant morbi. Aenean pharetra magna ac placerat vestibulum lectus mauris. Dui ut ornare lectus sit amet est placerat in egestas. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper.',
         active: true
       },
       {
         id: 3,
-        name: 'Could our solar system have a new planet?',
+        name: 'Researchers Put Machine Learning on Path to Quantum Advantage',
         info: 'Consectetur a erat nam at lectus urna. Morbi tincidunt augue interdum velit euismod in. Ornare massa eget egestas purus viverra. Malesuada fames ac turpis egestas sed tempus. Fames ac turpis egestas maecenas pharetra convallis posuere. Sit amet consectetur adipiscing elit pellentesque habitant morbi. Aenean pharetra magna ac placerat vestibulum lectus mauris. Rhoncus aenean. Dui ut ornare lectus sit amet est placerat in egestas. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper.',
         description: 'Consectetur a erat nam at lectus urna. Morbi tincidunt augue interdum velit euismod in. Ornare massa eget egestas purus viverra. Malesuada fames ac turpis egestas sed tempus. Fames ac turpis egestas maecenas pharetra convallis posuere. Sit amet consectetur adipiscing elit pellentesque habitant morbi. Aenean pharetra magna ac placerat vestibulum lectus mauris. Rhoncus aenean. Dui ut ornare lectus sit amet est placerat in egestas. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper.',
         active: true

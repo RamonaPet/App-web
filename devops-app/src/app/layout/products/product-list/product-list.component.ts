@@ -29,7 +29,7 @@ export class ProductListComponent implements OnInit {
       name: 'string 1',
       info: '',
       active: true,
-      image: ''
+      image: '' 
     }, {
       id: 2,
       name: 'string 2',

@@ -16,6 +16,7 @@ import { NewsRoutingModule } from './news-routing.module';
 
 import { NewDetailComponent } from './new-detail/new-detail.component';
 import { NewListComponent } from './new-list/new-list.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { NewListComponent } from './new-list/new-list.component';
     MatSliderModule, MatSlideToggleModule, MatButtonModule, MatCardModule, MatIconModule, MatTableModule, MatFormFieldModule, MatGridListModule,
     MatPaginatorModule, MatDividerModule, MatListModule, MatSnackBarModule, MatTabsModule, CKEditorModule,
     FlexLayoutModule,
-    NewsRoutingModule
+    NewsRoutingModule,
+    TranslateModule.forChild()
   ],
   entryComponents: [
     NewDetailComponent

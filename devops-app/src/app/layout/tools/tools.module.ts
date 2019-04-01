@@ -17,6 +17,7 @@ import { ToolsRoutingModule } from './tools-routing.module';
 
 import { ToolListComponent } from './tool-list/tool-list.component';
 import { ToolDetailComponent } from './tool-detail/tool-detail.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -44,7 +45,8 @@ import { ToolDetailComponent } from './tool-detail/tool-detail.component';
     MatTableModule,
     MatSnackBarModule,
     CKEditorModule,
-    ToolsRoutingModule
+    ToolsRoutingModule,
+    TranslateModule.forChild()
   ],
   declarations: [
     ToolListComponent,

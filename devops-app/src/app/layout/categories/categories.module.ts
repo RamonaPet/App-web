@@ -12,6 +12,7 @@ import { CategoriesRoutingModule } from './categories-routing.module';
 
 import { CategoryDetailComponent } from './category-detail/category-detail.component';
 import { CategoryListComponent } from './category-list/category-list.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { CategoryListComponent } from './category-list/category-list.component';
     MatInputModule,
     MatGridListModule,
     FlexLayoutModule,
-    CategoriesRoutingModule
+    CategoriesRoutingModule,
+    TranslateModule.forChild()
   ],
   declarations: [
     CategoryListComponent,

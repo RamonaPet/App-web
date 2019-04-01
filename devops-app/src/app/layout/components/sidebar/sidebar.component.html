@@ -1,22 +1,22 @@
 <div id="sidebar">
     <mat-nav-list>
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/dashboard']">
-            <mat-icon class="sidenav-icon">dashboard</mat-icon> Dashboard
+            <mat-icon class="sidenav-icon">dashboard</mat-icon> {{ 'Dashboard' | translate }}
         </a>
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/categories']">
-            <mat-icon class="sidenav-icon">list</mat-icon> Categories
+            <mat-icon class="sidenav-icon">list</mat-icon> {{ 'Categories' | translate }}
         </a>
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/products']">
-            <mat-icon class="sidenav-icon">keyboard</mat-icon> Products
+            <mat-icon class="sidenav-icon">keyboard</mat-icon> {{ 'Products' | translate }}
         </a>
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/tools']">
-            <mat-icon class="sidenav-icon">build</mat-icon> Tools
+            <mat-icon class="sidenav-icon">build</mat-icon> {{ 'Tools' | translate }}
         </a>
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/tutorials']">
-            <mat-icon class="sidenav-icon">work</mat-icon> Tutorials
+            <mat-icon class="sidenav-icon">work</mat-icon> {{ 'Tutorials' | translate }}
         </a>
         <a mat-list-item [routerLinkActive]="'active'" [routerLink]="['/news']">
-            <mat-icon class="sidenav-icon">subject</mat-icon> News
+            <mat-icon class="sidenav-icon">subject</mat-icon> {{ 'News' | translate }}
         </a>        
     </mat-nav-list>
 </div>

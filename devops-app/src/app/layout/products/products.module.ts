@@ -17,6 +17,7 @@ import { ProductsRoutingModule } from './products-routing.module';
 
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import { ProductListComponent } from './product-list/product-list.component';
     MatSliderModule, MatSlideToggleModule, MatButtonModule, MatCardModule, MatIconModule, MatTableModule, MatFormFieldModule, MatGridListModule,
     MatPaginatorModule, MatDividerModule, MatListModule, MatSnackBarModule, MatTabsModule, CKEditorModule,
     FlexLayoutModule,
-    ProductsRoutingModule
+    ProductsRoutingModule,
+    TranslateModule.forChild()
   ],
   declarations: [
     ProductDetailComponent,

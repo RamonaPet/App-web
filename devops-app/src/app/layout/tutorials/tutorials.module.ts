@@ -16,6 +16,7 @@ import { TutorialsRoutingModule } from './tutorials-routing.module';
 
 import { TutorialDetailComponent } from './tutorial-detail/tutorial-detail.component';
 import { TutorialListComponent } from './tutorial-list/tutorial-list.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { TutorialListComponent } from './tutorial-list/tutorial-list.component';
     MatSliderModule, MatSlideToggleModule, MatButtonModule, MatCardModule, MatIconModule, MatTableModule, MatFormFieldModule, MatGridListModule,
     MatPaginatorModule, MatDividerModule, MatListModule, MatSnackBarModule, MatTabsModule, CKEditorModule,
     FlexLayoutModule, MatTreeModule,
-    TutorialsRoutingModule
+    TutorialsRoutingModule,
+    TranslateModule.forChild()
   ],
   declarations: [
     TutorialDetailComponent,

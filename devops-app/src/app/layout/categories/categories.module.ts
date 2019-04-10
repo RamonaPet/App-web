@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { MatButtonModule, MatCardModule, MatIconModule, MatTableModule, MatInputModule, MatCheckboxModule } from '@angular/material';
+import { MatButtonModule, MatCardModule, MatIconModule, MatTableModule, MatInputModule, MatCheckboxModule, MatSelectModule } from '@angular/material';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDividerModule } from '@angular/material/divider';
 
@@ -27,7 +27,7 @@ import { TranslateModule } from '@ngx-translate/core';
     MatGridListModule,
     FlexLayoutModule,
     CategoriesRoutingModule,
-    MatCheckboxModule,
+    MatSelectModule,
     TranslateModule.forChild()
   ],
   declarations: [

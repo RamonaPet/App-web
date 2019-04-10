@@ -13,6 +13,15 @@ label {
   display: inline-block;
 }
 
+input {
+  width: 250px;
+}
+
+.mat-select {
+  width: auto;
+  min-width: 70px;
+}
+
 .mr-10 {
   margin-right: 10px;
 }

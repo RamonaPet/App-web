@@ -9,15 +9,18 @@
         </div>
         <div>
           <label><strong>{{ 'Name:' | translate }}</strong></label>
-          <input [(ngModel)]="item.name" placeholder="name" />
+          <input matInput [(ngModel)]="item.name" placeholder="{{ 'Name:' | translate }}" />
         </div>
         <div>
           <label><strong>{{ 'Info:' | translate }}</strong></label>
-          <input [(ngModel)]="item.info" placeholder="info" />
+          <input matInput [(ngModel)]="item.info" placeholder="{{ 'Info:' | translate }}" />
         </div>
         <div>
           <label><strong>{{ 'Active:' | translate }}</strong></label>
-          <mat-checkbox [(ngModel)]="item.active"></mat-checkbox>
+          <mat-select [(ngModel)]="item.active" placeholder="{{ 'Active:' | translate }}">
+            <mat-option [value]="true">Yes</mat-option>
+            <mat-option [value]="false">No</mat-option>
+          </mat-select>
         </div>
         <div>
         <label><strong>{{ 'Image:' | translate }}</strong></label>

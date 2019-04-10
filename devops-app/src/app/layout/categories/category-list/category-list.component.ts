@@ -22,20 +22,7 @@ export class CategoryListComponent implements OnInit {
     this.fillItems();
   }
 
-  fillItems(): void {
-    this.dataSource = new MatTableDataSource([{
-      id: 1,
-      name: 'Category 1',
-      info: 'Category 1 info',
-      active: true,
-      image: ''
-    }, {
-      id: 2,
-      name: 'Category 2',
-      info: 'Category 2 info',
-      active: true,
-      image: ''
-    }]);
+  fillItems(): void {    
     this.serviceItems.getItems().subscribe(items => {
       this.dataSource = new MatTableDataSource(items);
     });

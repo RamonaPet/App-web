@@ -1,30 +1,39 @@
-<div *ngIf="item">
-  <h2>{{item.name | uppercase}} Details</h2>
-  <div><span>id: </span>{{item.id}}</div>
-  <div>
-    <label>name:
-      <input [(ngModel)]="item.name" placeholder="name" />
-    </label>
-    <br />
-    <label>info:
-      <input [(ngModel)]="item.info" placeholder="info" />
-    </label>
-    <br />
-    <label>active:
-      <input [(ngModel)]="item.active" placeholder="active" />
-    </label>
-    <br />
-    <p>Imagine:</p>
-    <button mat-raised-button (click)="fileImageInput.click()">
-      <span>Select Image</span>
-      <input #fileImageInput type="file" style="display:none;" accept="image/jpeg, .jpeg, image/png, .png, image/pjpeg, .jpg"
-        (change)="onFileImageInput($event)" />
-    </button>
-    <br /><br /><br />
-    <div>
-      <img class="mb-image" mat-card-image [src]="item.image" *ngIf="item.image">
-    </div>
-  </div>
-  <button (click)="goBack()">go back</button>
-  <button (click)="save()">save</button>
-</div>
+<section *ngIf="item">
+  <mat-card>
+    <mat-card-title>{{item.name | uppercase}} {{ 'Details' | translate }}</mat-card-title>
+    <mat-card-content>
+      <div fxLayout="column wrap" fxLayoutGap="20px">
+        <div>
+          <label><strong>Id:</strong></label>
+          <span>{{item.id}}</span>
+        </div>
+        <div>
+          <label><strong>{{ 'Name:' | translate }}</strong></label>
+          <input [(ngModel)]="item.name" placeholder="name" />
+        </div>
+        <div>
+          <label><strong>Info:</strong></label>
+          <input [(ngModel)]="item.info" placeholder="info" />
+        </div>
+        <div>
+          <label><strong>Active:</strong></label>
+          <mat-checkbox [(ngModel)]="item.active"></mat-checkbox>
+        </div>
+        <div>
+          <label><strong>Image:</strong></label>
+          <button mat-raised-button (click)="fileImageInput.click()">
+            <span>Select Image</span>
+            <input #fileImageInput type="file" style="display:none;"
+              accept="image/jpeg, .jpeg, image/png, .png, image/pjpeg, .jpg" (change)="onFileImageInput($event)" />
+          </button>
+          <div class="detail-image-container">
+            <img class="mb-image" mat-card-image [src]="item.image" *ngIf="item.image">
+          </div>
+        </div>
+      </div>
+    </mat-card-content>
+    <button class="mr-10" mat-raised-button (click)="goBack()">Go back</button>
+    <button mat-raised-button (click)="save()">Save</button>
+  </mat-card>
+
+</section>

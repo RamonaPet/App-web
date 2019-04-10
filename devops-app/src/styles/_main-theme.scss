@@ -47,8 +47,12 @@
                 margin-left: 24px;
             }
         
-            .mat-row {
+            .mat-row .mat-cell {
                 opacity: 0.54;
+
+                &.mat-column-image {
+                    opacity: 1;
+                }
             }
         }
 

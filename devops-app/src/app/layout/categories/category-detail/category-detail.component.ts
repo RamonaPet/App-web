@@ -46,4 +46,8 @@ export class CategoryDetailComponent implements OnInit {
     this.itemService.updateItem(this.item)
       .subscribe(() => this.goBack());
   }
+
+  deleteImage(category: Category) {
+    category.image = null;
+  }
 }

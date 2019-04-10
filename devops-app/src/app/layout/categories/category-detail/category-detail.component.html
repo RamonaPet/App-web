@@ -12,28 +12,31 @@
           <input [(ngModel)]="item.name" placeholder="name" />
         </div>
         <div>
-          <label><strong>Info:</strong></label>
+          <label><strong>{{ 'Info:' | translate }}</strong></label>
           <input [(ngModel)]="item.info" placeholder="info" />
         </div>
         <div>
-          <label><strong>Active:</strong></label>
+          <label><strong>{{ 'Active:' | translate }}</strong></label>
           <mat-checkbox [(ngModel)]="item.active"></mat-checkbox>
         </div>
         <div>
-          <label><strong>Image:</strong></label>
-          <button mat-raised-button (click)="fileImageInput.click()">
-            <span>Select Image</span>
+        <label><strong>{{ 'Image:' | translate }}</strong></label>
+          <button class="mr-10" mat-raised-button (click)="fileImageInput.click()">
+            <span>{{ 'Select image' | translate }}</span>
             <input #fileImageInput type="file" style="display:none;"
               accept="image/jpeg, .jpeg, image/png, .png, image/pjpeg, .jpg" (change)="onFileImageInput($event)" />
           </button>
+          <button mat-raised-button 
+            *ngIf="item.image"
+            (click)="deleteImage(item)">{{ 'Delete image' | translate }}</button>
           <div class="detail-image-container">
             <img class="mb-image" mat-card-image [src]="item.image" *ngIf="item.image">
           </div>
         </div>
       </div>
     </mat-card-content>
-    <button class="mr-10" mat-raised-button (click)="goBack()">Go back</button>
-    <button mat-raised-button (click)="save()">Save</button>
+    <button class="mr-10" mat-raised-button (click)="goBack()">{{ 'Go back' | translate }}</button>
+    <button mat-raised-button (click)="save()">{{ 'Save' | translate }}</button>
   </mat-card>
 
 </section>
